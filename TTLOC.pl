@@ -459,15 +459,15 @@ Arguments:
 
 	--genome <string>. Supply merged genome sequence in FASTA format as reference sequences.
 
-	--1 <string>. Input READ1 file.
+	-1 <string>. Input READ1 file.
 
-	--2 <string>. Input READ2 file.
+	-2 <string>. Input READ2 file.
 
 	--prefix <string>. Prefix of output.
 
 	--tDNA <string>. Supply tDNA sequence in FASTA format as reference.
 
-	--t <int>. Number of  threads. The default is 1.
+	-t <int>. Number of  threads. The default is 1.
 
 	--LB <int>. Length of tDNA Left Repeat. The default is 500 nt.
 
