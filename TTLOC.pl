@@ -469,9 +469,9 @@ Arguments:
 
 	--t <int>. Number of  threads. The default is 1.
 
-	--LB <int>. Number of tDNA Left Repeat. The default is 500 nt.
+	--LB <int>. Length of tDNA Left Repeat. The default is 500 nt.
 
-	--RB <int>. Number of tDNA Right Repeat. The default is 500 nt.
+	--RB <int>. Length of tDNA Right Repeat. The default is 500 nt.
 
 	--help. Print the help message and quit.
 
