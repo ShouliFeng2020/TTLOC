@@ -40,31 +40,25 @@ The name of tDNA reference sequence shoud be: "tDNA"
 
 ### Output:
 
-### BED file
-TDNAscan produces a single BED file which contains all unique deletions that were identified.
+### summary file
+TTLOC produces a single summary file which contains all candidate tDNA integration sites that were identified.
 
-The output is placed in ./tdna (i.e. in the directory named after your project)
+The output is "prefix".tDNA.summary
 
-Running the above example code (Step 1) would produce the following BED file:
+### summary file structure
 
-* ./tdna/**5.tdna_insertion.bed**
+* Ref:Breakpoint: The tDNA integration Chromosome number and integration site;	
+* RefSide: The side of tDNA integration genome that were identified;
+* tDNA: The tDNA repeat region (Left or Right repeat) integrated into the genome;
+* tDNA_break: The site of tDNA break were identified.
+* Direction: The direction of tDNA integration into genome;
+* Split_supportN: The split support reads number;
+* Discort_support: The discort support reads number.
+* Sample: The sampleID, determined by parameter "prefix".
 
-Annotated BED file (Step 2):
-
-* ./tdna/**5.tdna_insertion_annot.bed**
-
-### Output file structure
-
-* Chr: Chromosome number;	
-* Position: Start position of insertions (~ represents insertion position nearby);
-* SuppRead: CLR represents the clipped reads number; DIR represents discordant reads number;
-* SuppRead: tdna_st and tdna_end represent the start and end position of T-DNA sequence truncated when inserted to reference genome.
-* Orientation: forward or reverse T-DNA inserted to reference genome;
-* Freq: Insertion frequency;
-* Genes (optional): This column will only show genes if deletions cover.
 
 
 # Contact
 
-* Dr. Liang Sun    (sunliang@udel.edu)
-* Yinbing  Ge  (yinge@noble.org)
+* Dr. Shouli Feng    (fengshouli@xhlab.ac.cn)
+
