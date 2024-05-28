@@ -1,36 +1,38 @@
 # Citation
-Sun, Liang, et al. 
-["TDNAscan: A Software to Identify Complete and Truncated T-DNA Insertions."](https://www.frontiersin.org/articles/10.3389/fgene.2019.00685/abstract) Frontiers in Genetics (2019),doi: 10.3389/fgene.2019.00685
 
-# Installing TDNAscan 
 
-## Operating System Requirements
-
-TDNAscan has been tested on the following Linux distributions:
-
-* Ubuntu 14.04 LTS
-* Ubuntu 16.04 LTS
-* Ubuntu 18.04 LTS
-* Ubuntu 20.04 LTS
-* CentOS 7.3
-* Debian 7 "Wheezy"
-* Debian 8 "Jessie"
+# Installing TTLOC 
 
 ## Software Dependencies
+TTLOC has been tested on the Ubuntu 11.4.0 Linux:
 The following programs need to be installed and the executable commands should be in $PATH of system.
-* BWA (Version ="0.7.12")
-* Samtools (Version ="1.3.1")
-* Python (Version at least 3.6.x)
+* fastp (Version = "0.23.4")
+* flash (Version = "1.2.11")
+* BWA (Version ="0.7.17")
+* Samtools (Version ="1.19")
+* perl (Version = "v5.32.1")
+* blast+ (Version = "2.15.0")
 
+# Using TTLOC
 
-# Using TDNAscan
-* Recommendation: trim your NGS reads using Trimmomatics or other NGS trimmers before using TDNAscan, otherwise, the final results will include some false positve insertions.
+## Step 1 - Merge genome reference and tDNA reference
+The name of tDNA reference sequence shoud be: "tDNA"
 
-## Step 1 - Identify complete and truncated T-DNA insertions
+`cat genome.fa tDAN.fa > genome.tDNA.fa`
+
+### Example:
+
+An example data set is provided with this repository.
+
+Running the following example code will create a merged reference:
+
+`cat `
+
+## Step 2 - Identify the T-DNA integration sites
   
 ### Usage: 
 
-`python tdnascan.py -1 forward.fq -2 reverse.fq -t t-dna.fa -g ref_genome.fa -p tdna`
+`perl TTLOC.pl -g genome.tDNA.fa -1 forward.fq -2 reverse.fq -t tDNA.fa -s sample`
 
 ### Parameters:
 
