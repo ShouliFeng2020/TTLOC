@@ -19,7 +19,11 @@ The name of tDNA reference sequence shoud be: "tDNA"
 `cat genome.fa tDNA.fa > genome.tDNA.fa`
 
 
-## Step 2 - Identify the T-DNA integration sites
+## Step 2 - Built index for Merged genome
+
+`bwa index  genome.fa tDNA.fa`
+
+## Step 3 - Identify the T-DNA integration sites
   
 ### Usage: 
 
