@@ -64,10 +64,10 @@ unless ($prefix){
 
 
 
-unless(-e "$genome.amb"){
-	`bwa index $genome`;
+# unless(-e "$genome.amb"){
+#	`bwa index $genome`;
 
-}
+# }
 
 
 `fastp -p -i $input1 -I $input2 -o $input1.fastp -O $input2.fastp -h $prefix.fastp.html`;
