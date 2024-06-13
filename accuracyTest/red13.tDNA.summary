@@ -1,0 +1,3 @@
+Ref:Breakpoint	RefSide	tDNA	tDNA_break	Direction	Split_supportN	Discort_supportN	Sample
+Chr5:22156369	Left	RB	3805	Reverse	7	12	red13
+Chr5:22156399	Right	LB	11	Reverse	12	3	red13
