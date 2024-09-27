@@ -62,6 +62,7 @@ The output is "prefix".tDNA.summary
 
 ### support reads and flank sequence in fasta format
 The Split_support reads and Discor_support reads are saved in "prefix"_split_support_reads.fa and "prefix"_discort_support_reads.fa, respectively.
+Merged 
 The 2000bp sequences flank the insertion site is saved in the "prefix"_flank_seq.fa.
 
 ### support reads blastn plant Genome
