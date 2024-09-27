@@ -25,7 +25,7 @@ The name of tDNA reference sequence shoud be: "tDNA"
 
 ## Step 3 - Identify the T-DNA integration sites
   
-### Usage: 
+## Usage: 
 
 `perl TTLOC.pl --genome /path/to/genome.tDNA.fa -1 input_1.fq -2 input_2.fq --prefix sampleID --tDNA /path/to/tDNA.fa `
 
@@ -42,9 +42,9 @@ The name of tDNA reference sequence shoud be: "tDNA"
 	* --RB the length of tDNA Right Repeat [default:500]
 
 
-### Output:
+## Output:
 
-#### summary file
+### summary file
 TTLOC produces a single summary file which contains all candidate tDNA integration sites that were identified.
 
 The output is "prefix".tDNA.summary
@@ -60,6 +60,12 @@ The output is "prefix".tDNA.summary
 * Discort_supportN: 	The discort support reads number.
 * Sample: 		The sampleID, determined by parameter "prefix".
 
+### support reads and flank sequence in fasta format
+The Split_support reads and Discor_support reads are saved in "prefix"_split_support_reads.fa and "prefix"_discort_support_reads.fa, respectively.
+The 2000bp sequences flank the insertion site is saved in the "prefix"_flank_seq.fa.
+
+### support reads blastn plant Genome
+The split and discort support reads were aligned to plant genome using blastnm and the alignment results are saved in "prefix".displit.extraVSGenome.txt file in blast "outfmt 6" format
 
 
 # Contact
