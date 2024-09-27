@@ -51,14 +51,14 @@ The output is "prefix".tDNA.summary
 
 ### summary file structure
 
-* Ref:Breakpoint: The tDNA integration Chromosome number and integration site;	
-* RefSide: The side of tDNA integration genome that were identified;
-* tDNA: The tDNA repeat region (Left or Right repeat) integrated into the genome;
-* tDNA_break: The site of tDNA break were identified.
-* Direction: The direction of tDNA integration into genome;
-* Split_supportN: The split support reads number;
-* Discort_support: The discort support reads number.
-* Sample: The sampleID, determined by parameter "prefix".
+* Ref:Breakpoint: 	The tDNA integration Chromosome number and integration site;	
+* RefSide: 		The side of tDNA integration genome that were identified;
+* tDNA: 		The tDNA repeat region (Left or Right repeat) integrated into the genome;
+* tDNA_break: 		The site of tDNA break were identified.
+* Direction: 		The direction of tDNA integration into genome;
+* Split_supportN: 	The split support reads number;
+* Discort_supportN: 	The discort support reads number.
+* Sample: 		The sampleID, determined by parameter "prefix".
 
 
 
