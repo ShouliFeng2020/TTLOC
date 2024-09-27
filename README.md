@@ -44,12 +44,12 @@ The name of tDNA reference sequence shoud be: "tDNA"
 
 ### Output:
 
-### summary file
+#### summary file
 TTLOC produces a single summary file which contains all candidate tDNA integration sites that were identified.
 
 The output is "prefix".tDNA.summary
 
-### summary file structure
+#### summary file structure
 
 * Ref:Breakpoint: 	The tDNA integration Chromosome number and integration site;	
 * RefSide: 		The side of tDNA integration genome that were identified;
