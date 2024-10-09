@@ -43,7 +43,6 @@ The name of tDNA reference sequence shoud be: "tDNA"
 
 
 ## Output:
-
 ### summary file
 TTLOC produces a single summary file which contains all candidate tDNA integration sites that were identified.
 
@@ -61,12 +60,39 @@ The output is "prefix".tDNA.summary
 * Sample: 		The sampleID, determined by parameter "prefix".
 
 ### support reads and flank sequence in fasta format
-The Split_support reads and Discor_support reads are saved in "prefix"_split_support_reads.fa and "prefix"_discort_support_reads.fa, respectively.
-Merged 
+The TTLOC provides support reads based on BWA alignment,  which are saved in files named "prefix"_split_support_reads.fa and "prefix"_discort_support_reads.fa, respectively.
+
+The TTLOC also provides support reads for BLASTN alignment, which are saved in files named "prefix".displit.extra.fa.
+
 The 2000bp sequences flank the insertion site is saved in the "prefix"_flank_seq.fa.
 
-### support reads blastn plant Genome
-The split and discort support reads were aligned to plant genome using blastnm and the alignment results are saved in "prefix".displit.extraVSGenome.txt file in blast "outfmt 6" format
+### BLASTN alignment
+The split and discort support reads were aligned to plant genome using blastn and the alignment results are saved in "prefix".displit.extraVSGenome.txt file in blast "outfmt 6" format
+
+ 	1.  qseqid      query or source (gene) sequence id
+
+  	2.  sseqid      subject or target (reference genome) sequence id
+
+   	3.  pident      percentage of identical positions
+
+   	4.  length      alignment length (sequence overlap)
+
+   	5.  mismatch    number of mismatches
+
+   	6.  gapopen     number of gap openings
+
+   	7.  qstart      start of alignment in query
+
+   	8.  qend        end of alignment in query
+
+   	9.  sstart      start of alignment in subject
+
+ 	10.  send        end of alignment in subject
+
+ 	11.  evalue      expect value
+
+	12.  bitscore    bit score
+
 
 
 # Contact
